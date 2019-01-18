@@ -25,7 +25,7 @@
 #include <multipass/ssl_cert_provider.h>
 #include <multipass/utils.h>
 
-#include <QCoreApplication>
+#include <QApplication>
 #include <QStandardPaths>
 #include <QtGlobal>
 
@@ -48,7 +48,7 @@ std::string get_server_address()
 
 int main(int argc, char* argv[])
 {
-    QCoreApplication app(argc, argv);
+    QApplication app(argc, argv);
     QCoreApplication::setApplicationName("multipass");
     mp::Console::setup_environment();
 
